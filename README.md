@@ -1,12 +1,21 @@
 # Polars-Learning-Path
 
-Welcome to the Polars-Learning-Path repository! This repository is dedicated to providing resources, tutorials, and examples for learning and working with Polars, a fast DataFrame library in Rust and Python. Our goal is to help users of all levels gain proficiency in using Polars for data manipulation and analysis.
+Polars-Learning-Path is a repository dedicated to providing resources, tutorials, and examples for learning and working with Polars library, a fast DataFrame library in Rust and Python. The main objective of this learning path is to help users of all levels gain proficiency in using `Polars` for data manipulation and analytics.
 
-## About Polars
+# Author and Maintainer
 
-Polars is a DataFrame library written in Rust, offering high performance and efficient data processing capabilities. It is also available in Python, providing an easy-to-use interface while leveraging Rust's speed.
+The creator and maintainer of this repository is **Dr. Saad Laouadi**. I create comprehensive tutorials in data science and programming and share this content free of charge to help people who can't pay learn and improve.
 
-For more information on contributing to this repository, please see the [Contributing](#contributing) section.
+If you have any questions, feedback, or suggestions, feel free to reach out or open an issue.
+
+- **Name:** **Dr Saad Laouadi**
+- **GitHub:** [![GitHub](https://img.icons8.com/fluent/48/000000/github.png)](https://github.com/dr-saad-la)
+- **LinkedIn:** [![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/saad-laouadi/)
+- **Email:** [![Email](https://img.icons8.com/fluent/48/000000/mail.png)](mailto:dr.saad.laouadi@gmail.com)
+
+## What is Polars?
+
+**Polars** is a DataFrame library written in Rust, offering high performance and efficient data processing capabilities. It is also available in Python, providing an easy-to-use interface while leveraging Rust's speed. It has also APIs for other programming language, but the main focus of this repository is Python.
 
 ## Repository Structure
 
@@ -17,16 +26,9 @@ For more information on contributing to this repository, please see the [Contrib
 - `Datasets/`: Provides sample datasets used within tutorials, examples, and projects, aiding in practical exercises and demonstrations.
 - `Scripts/`: Contains utility scripts for data processing and analysis, complementing the learning material in other directories.
 
+## Contribution
 
-# Maintainer
-
-This repository is currently maintained by **Dr.Saad Laouadi**. If you have any questions, feedback, or suggestions, feel free to reach out or open an issue.
-
-- **Name:** **Dr Saad Laouadi**
-- **GitHub:** [![GitHub](https://img.icons8.com/fluent/48/000000/github.png)](https://github.com/qcversity)
-
-- **LinkedIn:** [![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/saad-laouadi/)
-- **Email:** [![Email](https://img.icons8.com/fluent/48/000000/mail.png)](mailto:qcversity.info@gmail.com)
+For more information on contributing to this repository, please see the [Contributing](#contributing) section.
 
 # Table of Contents
 
@@ -55,25 +57,24 @@ This repository is currently maintained by **Dr.Saad Laouadi**. If you have any 
 To get started with this repository, clone it to your local machine using:
 
 ```bash
-git clone https://github.com/your-username/Polars-Learning-Path.git
+git clone https://github.com/dr-saad-la/Polars-Learning-Path.git
 ```
 
 ## Prerequisites
 
 Ensure you have Python installed on your system. You can download Python from python.org. Additionally, you'll need to install Polars. You can install it via pip:
-
-```
-pip install polars
-```
+   ```
+   pip install polars
+   ```
 
 ## Running the Examples
 
 To run the examples, navigate to the examples/ directory and execute the Python scripts:
 
-```bash
-cd Polars-Learning-Path/examples/
-python example_script.py
-```
+   ```bash
+   cd Polars-Learning-Path/examples/
+   python example_script.py
+   ```
 
 ## Contributing
 
@@ -92,7 +93,6 @@ We welcome contributions to the Polars-Learning-Path repository! Whether it's ad
 
 - [Polars GitHub Repository](https://github.com/pola-rs/polars)
 - [Polars official documentation](https://pola-rs.github.io/polars/py-polars/html/index.html)
-
 
 
 ### License
