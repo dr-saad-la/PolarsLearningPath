@@ -178,3 +178,6 @@ datasets/city_temperature.csv
 earthquake.csv
 
 datasets/
+
+.flake8
+.pylintrc
