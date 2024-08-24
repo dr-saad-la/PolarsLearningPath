@@ -15,7 +15,7 @@ Here is even a simplified defintion
 
 In essence, creating a distinct environment in Python ensures compatibility, reproducibility, and easy sharing of projects without conflicts or issues when others use your code on their systems.
 
-## Creating Virtual Environment 
+## Creating Virtual Environment
 
 To create a virtual environment we will be using command-line interfaces like the Windows Command Prompt for Windows and the terminal for Unix-based systems such as Linux and Mac OS throughout this course, as they are preferable for working with these tools. Familiarity with CLI tools, whether built-in or third-party, is encouraged.
 
@@ -34,27 +34,27 @@ Anaconda comes with its own Command Line Interface known as **Anaconda Prompt**,
 
 - To create a new virtual environment named `plenv`, launch your command line interface (CLI),  and run the following command:
 
-```bash
-conda create --name plenv
-```
+   ```bash
+   conda create --name plenv
+   ```
 
 
 ### Activating the Virtual Environment
 
 - You can activate the virtual environment `plenv` using the following command: 
 
-```bash
-conda activate plenv
-```
+   ```bash
+   conda activate plenv
+   ```
 
 
 ### Installing Packages in the Virtual Environment
 
 With your `plenv` virtual environment active, we can install the Python packages `pandas`, `polars`, `numpy` and `pyarrow` like this:
 
-```bash
-conda install numpy pandas polars pyarrow
-```
+   ```bash
+   conda install numpy pandas polars pyarrow
+   ```
 
 ### Using Virtual Environments with Jupyter Notebooks
 
@@ -63,51 +63,51 @@ Ensure that you have already activated your virtual environment as discussed abo
 
 1. **Install Jupyter Lab:** You can install `Jupyter lab` in the active virtual environment `plenv` using this command:
 
-```bash
-conda install -c conda-forge jupyterlab
-```
+   ```bash
+   conda install -c conda-forge jupyterlab
+   ```
 
 
 - **Install `ipykernel`:**  This allows you to create a custom kernel specific to your virtual environment. 
 
-```bash
-conda install -c anaconda ipykernel
-```
+   ```bash
+   conda install -c anaconda ipykernel
+   ```
 
 - **Add the kernel and the needed components for IPython:**
 
-```bash
-python -m ipython kernel install --user --name="Plenv"
-```
+   ```bash
+   python -m ipython kernel install --user --name="Plenv"
+   ```
 
 - **Launch jupyter notebook (or Jupyter lab):** You can launch a notebook from this environment using the command:
 
-```bash
-jupyter lab
-```
+   ```bash
+   jupyter lab .
+   ```
 
 ### Deactivating the Virtual Environment
 
 To deactivate the virtual environment and return to your base Python installation, use the following command:
 
-```bash
-conda deactivate
-```
+   ```bash
+   conda deactivate
+   ```
 
 
 ### Removing the Virtual Environment
 
 If you no longer need the virtual environment, you can remove it using the following command:
 
-```bash
-conda remove --name myenv --all
-```
+   ```bash
+   conda remove --name myenv --all
+   ```
 
 By following the previous steps, you can ensure a well-structured, isolated environment for your Python projects and streamline the process of working with the different Python frameworks such as Polars. Happy coding!
 
 ## Conclusion
 
-In this environment setup guide, we have established the importance of creating a dedicated virtual environment for Python projects. The significance of this step becomes evident when you start handling real world data science projects as well we Programming projects. 
+In this environment setup guide, we have established the importance of creating a dedicated virtual environment for Python projects. The significance of this step becomes evident when you start handling real world data science projects as well we Programming projects.
 
 
 

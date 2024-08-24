@@ -15,7 +15,7 @@ Here is even a simplified defintion
 
 In essence, creating a distinct environment in Python ensures compatibility, reproducibility, and easy sharing of projects without conflicts or issues when others use your code on their systems.
 
-## Creating Virtual Environment 
+## Creating Virtual Environment
 
 To create a virtual environment we will be using command-line interfaces like the Windows Command Prompt for Windows and the terminal for Unix-based systems such as Linux and Mac OS throughout this course, as they are preferable for working with these tools. Familiarity with CLI tools, whether built-in or third-party, is encouraged.
 
@@ -66,7 +66,7 @@ tree -L 2 ~/Documents/plenv
 └── pyvenv.cfg
 ```
 
-for windows you can use the `dir` command. 
+for windows you can use the `dir` command.
 
 ### Activating the Virtual Environment:
 
@@ -79,8 +79,6 @@ After creating the virtual environment, you can activate it using the appropriat
 2. Windows:
     - Command Prompt: `C:\Users\YourUsername\Documents\plenv\bin\activate.bat`
     - Powershell: `C:\Users\YourUsername\Documents\plenv\bin\activate.ps1`
-
-
 
 3. **Using the virtual environment**
 
@@ -101,10 +99,10 @@ pip install polars pandas numpy pyarrow
 ```
 
  - **Using a Requirements File:** This method involves a text file typically named `requirements.txt`, which lists the required libraries along with their versions. This way is the preferred one for large projects. You can install all the dependencies listed in this file with a single command:
-  
-```bash
-pip install -r requirements.txt
-```
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ### Using Virtual Environments with Jupyter Notebooks
 
@@ -113,29 +111,29 @@ Ensure that you have already activated your virtual environment before proceedin
 
 1. **Install Jupyter Lab (if not already installed system-wide):** If you don't have Jupyter Lab installed system-wide, you can install it in your virtual environment with this command:
 
-```bash
-pip install jupyterlab
-```
+   ```bash
+   pip install jupyterlab
+   ```
 
 - **Install `ipykernel`:**  This allows you to create a custom kernel specific to your virtual environment. 
 
-```bash
-pip install ipykernel
-```
+   ```bash
+   pip install ipykernel
+   ```
 
 - **Add the kernel and the needed components for IPython:**
 
-```bash
-ipython kernel install --user --name="Plenv"
-```
+   ```bash
+   ipython kernel install --user --name=plenv --display-name "Polars Env"
+   ```
 
 - **Launch jupyter notebook (or Jupyter lab):** You can launch a notebook from this environment using the command:
 
-```bash
-jupyter notebook 
-# or 
-jupyter lab
-```
+   ```bash
+   jupyter notebook
+   # or
+   jupyter lab
+   ```
 
 
 ### Deactivating the Virtual Environment
@@ -166,7 +164,7 @@ By following the previous steps, you can ensure a well-structured, isolated envi
 
 ## Conclusion
 
-In this environment setup guide, we have established the importance of creating a dedicated virtual environment for Python projects. The significance of this step becomes evident when you start handling real world data science projects as well we Programming projects. 
+In this environment setup guide, we have established the importance of creating a dedicated virtual environment for Python projects. The significance of this step becomes evident when you start handling real world data science projects as well we Programming projects.
 
 
 

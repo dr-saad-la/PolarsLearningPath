@@ -1,6 +1,6 @@
 # Environment Setup
 
-It is essential to setup a proper environment for separate projects to avoid package conflicts. And since we are going to learn about a new Python framework `Polars`, it is considered best practive to create a dedicated virtual environment for this course. 
+It is essential to setup a proper environment for separate projects to avoid package conflicts. And since we are going to learn about a new Python framework `Polars`, it is considered best practive to create a dedicated virtual environment for this course.
 
 I will illustrate in this setup file how to setup this environment on both Windows and Unix-Based system such as Linux and Mac OS using Anaconda distribution package manager `conda`.
 
