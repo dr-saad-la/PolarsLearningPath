@@ -20,7 +20,9 @@ from urllib.parse import urlparse, unquote
 import pathlib
 
 
-def download_data(dataset_root_url, dataname, target_dir=None, local_root_path=None, verbose=False):  # noqa: E501
+def download_data(
+    dataset_root_url, dataname, target_dir=None, local_root_path=None, verbose=False
+):  # noqa: E501
     """
     Download and extracts a zip file containing CSV data from a specified URL.
 
@@ -35,7 +37,7 @@ def download_data(dataset_root_url, dataname, target_dir=None, local_root_path=N
     dataname : str
         The name of the dataset zip file to be downloaded.
     target_dir : str, optional
-        The directory where the extracted files should be stored. If not provided, a directory with the dataset 
+        The directory where the extracted files should be stored. If not provided, a directory with the dataset
         name will be created in the current working directory or the specified local root path.
     local_root_path : str, optional
         The local root path where the target directory will be created. Defaults to the current working directory.
@@ -64,7 +66,7 @@ def download_data(dataset_root_url, dataname, target_dir=None, local_root_path=N
 
     if target_dir:
         if not os.path.isabs(target_dir):
-            home_dir = os.path.expanduser('~')
+            home_dir = os.path.expanduser("~")
             target_dir_path = os.path.join(home_dir, target_dir)
         else:
             target_dir_path = target_dir
@@ -83,13 +85,13 @@ def download_data(dataset_root_url, dataname, target_dir=None, local_root_path=N
                 print(f"Created directory: {target_dir_path}")
 
         with tempfile.TemporaryDirectory() as tmp_dir:
-            zip_path = os.path.join(tmp_dir, 'temp.zip')
+            zip_path = os.path.join(tmp_dir, "temp.zip")
             urlretrieve(dataset_url, zip_path)
 
             if verbose:
                 print(f"Downloading {dataname}...")
 
-            with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+            with zipfile.ZipFile(zip_path, "r") as zip_ref:
                 zip_ref.extractall(target_dir_path)
                 if verbose:
                     print(f"Extracted to {target_dir_path}")
