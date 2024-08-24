@@ -1,3 +1,20 @@
+"""
+This module provides a utility function to download and extract zipped CSV datasets from a specified URL.
+
+The main function, `download_zipped_csv_data`, handles downloading a zip file from a given URL, extracting its 
+contents, and saving them to a specified directory. This is particularly useful for preparing datasets for 
+data analysis or machine learning tasks.
+
+
+Author:
+- Dr. Saad Laouadi
+
+License:
+- This material is intended for educational purposes only and may not be used directly in courses, 
+  video recordings, or similar without prior consent from the author. Proper credit must be attributed 
+  to the author when using or referencing this material.
+"""
+
 import zipfile
 import tempfile
 import os
@@ -6,26 +23,47 @@ from urllib.request import urlretrieve
 from urllib.parse import urlparse, unquote
 import pathlib
 
+
 def download_zipped_csv_data(dataset_root_url, dataname, target_dir=None, local_root_path=None, verbose=False):
     """
-    Downloads and extracts a zip file from a given dataset URL.
+    Download and extracts a zip file containing CSV data from a specified URL.
+
+    This function downloads a zip file from the provided dataset URL, extracts its contents, and saves them 
+    in the specified directory. If no target directory is provided, it uses the dataset name to create one.
+    The function can also provide verbose output detailing each step.
 
     Parameters
     ----------
     dataset_root_url : str
-        Root URL to the dataset directory.
+        The base URL where the dataset is hosted.
     dataname : str
-        Name of the dataset zip file.
+        The name of the dataset zip file to be downloaded.
     target_dir : str, optional
-        Target directory to store the extracted files. If not provided, uses the dataset name.
+        The directory where the extracted files should be stored. If not provided, a directory with the dataset 
+        name will be created in the current working directory or the specified local root path.
     local_root_path : str, optional
-        Local root path to store the extracted files. Defaults to the current working directory.
+        The local root path where the target directory will be created. Defaults to the current working directory.
     verbose : bool, optional
-        Flag to enable verbose output. Default is False.
+        If True, enables verbose output, providing information about the download and extraction process.
 
     Returns
     -------
     None
+        This function does not return any value. It downloads and extracts files to the specified location.
+
+    Raises
+    ------
+    zipfile.BadZipFile
+        If the downloaded zip file is corrupted, the function will raise this error and terminate.
+    Exception
+        If any other error occurs during the process, it will be captured, and a message will be printed if 
+        verbose is enabled.
+
+    Examples
+    --------
+    Download and extract a dataset with verbose output:
+    
+    >>> download_zipped_csv_data('https://example.com/data', 'dataset.zip', target_dir='data', verbose=True)
     """
     if not local_root_path:
         local_root_path = os.getcwd()
