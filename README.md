@@ -9,9 +9,9 @@ The creator and maintainer of this repository is **Dr. Saad Laouadi**. I create 
 If you have any questions, feedback, or suggestions, feel free to reach out or open an issue.
 
 - **Name:** **Dr Saad Laouadi**
-- **GitHub:** [![GitHub](https://img.icons8.com/fluent/48/000000/github.png)](https://github.com/dr-saad-la)
-- **LinkedIn:** [![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/saad-laouadi/)
-- **Email:** [![Email](https://img.icons8.com/fluent/48/000000/mail.png)](mailto:dr.saad.laouadi@gmail.com)
+- **GitHub:** [github](https://github.com/dr-saad-la)
+- **LinkedIn:** [linkedIn](https://www.linkedin.com/in/saad-laouadi/)
+- **Email:** [Emain](mailto:dr.saad.laouadi@gmail.com)
 
 ## What is Polars?
 
