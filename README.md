@@ -1,3 +1,5 @@
+<img src="_assets/logo.png" alt="Logo" width="100%"/>
+
 # Polars-Learning-Path
 
 Polars-Learning-Path is a repository dedicated to providing resources, tutorials, and examples for learning and working with Polars library, a fast DataFrame library in Rust and Python. The main objective of this learning path is to help users of all levels gain proficiency in using `Polars` for data manipulation and analytics.
